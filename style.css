@@ -1,0 +1,98 @@
+/* Pengaturan Dasar */
+body {
+    /* Font sans-serif untuk UI, lebih modern */
+    font-family: 'Lora', serif;
+    background-color: #fdfdfd; /* Warna putih gading, lebih hangat dari putih biasa */
+    color: #333;
+    line-height: 1.8; /* Jarak antar baris yang lega */
+    margin: 0;
+    padding: 40px 20px; /* Beri jarak dari tepi layar */
+}
+
+/* Kontainer yang membungkus semua konten */
+.container {
+    max-width: 700px; /* Batasi lebar teks agar mudah dibaca */
+    margin: 0 auto; /* Otomatis ke tengah */
+    text-align: center; /* Ratakan teks di header & footer */
+}
+
+/* Bagian Judul */
+header h1 {
+    /* Font 'Merriweather' untuk judul, lebih tegas tapi tetap klasik */
+    font-family: 'Merriweather', serif;
+    font-size: 2.5rem; /* Ukuran besar */
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 0.5rem;
+}
+
+header .subjudul {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #777;
+    margin-bottom: 3rem; /* Jarak besar ke isi pesan */
+    border-bottom: 1px solid #eee; /* Garis pemisah tipis */
+    padding-bottom: 1rem;
+}
+
+/* Bagian Isi Pesan (Long Text) */
+.isi-pesan {
+    text-align: left; /* Teks pesan kita buat rata kiri */
+    font-size: 1.1rem; /* Ukuran font yang nyaman dibaca */
+}
+
+.isi-pesan p {
+    margin-bottom: 1.5rem; /* Jarak antar paragraf */
+}
+
+/* Bagian Penutup (Tanda Tangan) */
+footer {
+    margin-top: 3rem; /* Jarak dari paragraf terakhir */
+    border-top: 1px solid #eee; /* Garis pemisah tipis */
+    padding-top: 2rem;
+}
+
+footer .penutup {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #555;
+    margin: 0;
+}
+
+footer .nama-kamu {
+    font-family: 'Merriweather', serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+}
+
+/* --- Efek Fade-in untuk JavaScript --- */
+
+/* 1. Sembunyikan elemennya dulu */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1.5s ease-in; /* Durasi animasi 1.5 detik */
+}
+
+/* 2. Class ini akan ditambahkan oleh JS */
+.visible {
+    opacity: 1;
+}
+/* --- Style Tombol Musik --- */
+#tombol-musik {
+    font-family: 'Lora', serif; /* Samakan font-nya */
+    background: none;
+    border: 1px solid #aaa;
+    color: #555;
+    padding: 8px 16px;
+    border-radius: 20px; /* Bikin rounded */
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+#tombol-musik:hover {
+    background: #f0f0f0;
+    border-color: #888;
+}

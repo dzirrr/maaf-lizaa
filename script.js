@@ -1,6 +1,6 @@
 window.addEventListener('load', () => {
     Swal.fire({
-        title: 'Do you want to play music in the background?',
+        title: 'Tolong klik Yes',
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
@@ -30,5 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
         //    Ini akan memicu transisi 'opacity' di CSS
         content.classList.add('visible');
     }, 2000);
+
 
 });
